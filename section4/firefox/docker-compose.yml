@@ -1,0 +1,12 @@
+# https://github.com/xorilog/docker-telegram
+version: "3"
+
+services:
+  firefox:
+    build: .
+    command: firefox
+    environment:
+      - DISPLAY=${IP}:0
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./data:/root/.mozilla

@@ -1,0 +1,5 @@
+data/
+.Xmodmap
+build_ff.sh
+docker-compose.yml
+Dockerfile
